@@ -32,14 +32,15 @@
       mc:Ignorable="d"
       NavigationCacheMode="Enabled">
 
-    <Page.Resources>
+  <Page.Resources>
 
-        <!-- Add the DataTemplate and style Setters here -->
-    </Page.Resources>
+    <!-- Add the DataTemplate and style Setters here -->
+  </Page.Resources>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+  <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <TextBlock x:Name="TitleTextBlock" Text="Collection" RenderTransformOrigin="0.548,0.3" Margin="24,0,0,24" Style="{StaticResource TitleTextBlockStyle}"/>
 
-        <!-- Add the TextBlock and GridView here -->
-        
-    </Grid>
+    <!-- Add the TextBlock and GridView here -->
+
+  </Grid>
 </Page>
