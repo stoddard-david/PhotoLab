@@ -136,7 +136,8 @@
 
                 <!-- Place image in grid, stretching it to fill the pane-->
                 <Image x:Name="ItemImage"
-               Stretch="UniformToFill">
+                       Source="{x:Bind ImageSource, Mode=OneWay}"
+                       Stretch="UniformToFill">
                     <!-- Add a tooltip to the image that displays metadata -->
                     <ToolTipService.ToolTip>
                         <ToolTip x:Name="tooltip">
@@ -255,7 +256,7 @@
                 </VisualState>
 
                 <!-- Large window VisualState -->
-                <VisualState x:Name="LargeWindow">
+                <VisualState>
 
                     <!-- Large window trigger -->
                     <VisualState.StateTriggers>
@@ -265,7 +266,7 @@
                 </VisualState>
 
                 <!-- Medium window VisualState -->
-                <VisualState x:Name="MediumWindow">
+                <VisualState>
 
                     <!-- Medium window trigger -->
                     <VisualState.StateTriggers>
@@ -275,7 +276,7 @@
                 </VisualState>
 
                 <!-- Small window VisualState -->
-                <VisualState x:Name="SmallWindow">
+                <VisualState>
 
                     <!-- Small window trigger -->
                     <VisualState.StateTriggers >
