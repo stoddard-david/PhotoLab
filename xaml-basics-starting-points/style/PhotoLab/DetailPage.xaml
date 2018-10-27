@@ -129,6 +129,15 @@
                                 <Setter Property="TickFrequency"
                                     Value="0.1" />
                             </Style>
+                            <Style TargetType="TextBlock"
+                                   x:Key="ValueTextBox">
+                                <Setter Property="Margin"
+                                        Value="10,8,0,0" />
+                                <Setter Property="VerticalAlignment"
+                                        Value="Center" />
+                                <Setter Property="Padding"
+                                        Value="0" />
+                            </Style>
                         </Grid.Resources>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition MinWidth="144" />
@@ -189,7 +198,7 @@
                                 Maximum="2"/>
                         <TextBlock Grid.Row="2"
                                    Grid.Column="1"
-                                   Margin="10,8,0,0" VerticalAlignment="Center" Padding="0"
+                                   Style="{StaticResource ValueTextBox}"
                                    Text="{x:Bind item.Exposure.ToString('N', culture), Mode=OneWay}" />
 
                         <Polygon Grid.Row="3" Stretch="Fill"
@@ -212,7 +221,7 @@
                                 Maximum="1"/>
                         <TextBlock Grid.Row="3"
                                    Grid.Column="1"
-                                   Margin="10,8,0,0" VerticalAlignment="Center" Padding="0"
+                                   Style="{StaticResource ValueTextBox}"
                                    Text="{x:Bind item.Temperature.ToString('N', culture), Mode=OneWay}" />
 
                         <Polygon Grid.Row="4" Stretch="Fill"
@@ -235,7 +244,7 @@
                                 Maximum="1"/>
                         <TextBlock Grid.Row="4"
                                    Grid.Column="1"
-                                   Margin="10,8,0,0" VerticalAlignment="Center" Padding="0"
+                                   Style="{StaticResource ValueTextBox}"
                                    Text="{x:Bind item.Tint.ToString('N', culture), Mode=OneWay}" />
 
                         <Slider Header="Contrast"
@@ -245,7 +254,7 @@
                                 Maximum="1" />
                         <TextBlock Grid.Row="5"
                                    Grid.Column="1"
-                                   Margin="10,8,0,0" VerticalAlignment="Center" Padding="0"
+                                   Style="{StaticResource ValueTextBox}"
                                    Text="{x:Bind item.Contrast.ToString('N', culture), Mode=OneWay}" />
 
                         <Slider Header="Saturation"
@@ -255,7 +264,7 @@
                                 Value="{x:Bind item.Saturation, Mode=TwoWay}" />
                         <TextBlock Grid.Row="6"
                                    Grid.Column="1"
-                                   Margin="10,8,0,0" VerticalAlignment="Center" Padding="0"
+                                   Style="{StaticResource ValueTextBox}"
                                    Text="{x:Bind item.Saturation.ToString('N', culture), Mode=OneWay}" />
 
                         <Slider Header="Blur"
@@ -265,7 +274,7 @@
                                 Maximum="5" />
                         <TextBlock Grid.Row="7"
                                    Grid.Column="1"
-                                   Margin="10,8,0,0" VerticalAlignment="Center" Padding="0"
+                                   Style="{StaticResource ValueTextBox}"
                                    Text="{x:Bind item.Blur.ToString('N', culture), Mode=OneWay}" />
 
                         <Grid Grid.Row="8"
