@@ -170,6 +170,18 @@
                             </telerikInput:RadRating.EmptyIconContentTemplate>
                         </telerikInput:RadRating>
 
+                        <Polygon Grid.Row="2" Stretch="Fill"
+                                 Points="0,20 200,20 200,0" HorizontalAlignment="Stretch"
+                                 VerticalAlignment="Center" Height="20">
+                            <Polygon.Fill>
+                                <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Offset="0" Color="Black" />
+                                        <GradientStop Offset="1" Color="White" />
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Polygon.Fill>
+                        </Polygon>
                         <Slider Header="Exposure"
                                 Grid.Row="2"
                                 Value="{x:Bind item.Exposure, Mode=TwoWay}"
@@ -180,6 +192,19 @@
                                    Margin="10,8,0,0" VerticalAlignment="Center" Padding="0"
                                    Text="{x:Bind item.Exposure.ToString('N', culture), Mode=OneWay}" />
 
+                        <Polygon Grid.Row="3" Stretch="Fill"
+                                 Points="0,20 200,20 200,0"
+                                 HorizontalAlignment="Stretch"
+                                 VerticalAlignment="Center" Height="20">
+                            <Polygon.Fill>
+                                <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Offset="0" Color="Blue" />
+                                        <GradientStop Offset="1" Color="Yellow" />
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Polygon.Fill>
+                        </Polygon>
                         <Slider Header="Temperature"
                                 Grid.Row="3"
                                 Value="{x:Bind item.Temperature, Mode=TwoWay}"
@@ -190,6 +215,19 @@
                                    Margin="10,8,0,0" VerticalAlignment="Center" Padding="0"
                                    Text="{x:Bind item.Temperature.ToString('N', culture), Mode=OneWay}" />
 
+                        <Polygon Grid.Row="4" Stretch="Fill"
+                                 Points="0,20 200,20 200,0"
+                                 HorizontalAlignment="Stretch"
+                                 VerticalAlignment="Center" Height="20">
+                            <Polygon.Fill>
+                                <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Offset="0" Color="Red" />
+                                        <GradientStop Offset="1" Color="Green" />
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Polygon.Fill>
+                        </Polygon>                        
                         <Slider Header="Tint"
                                 Grid.Row="4"
                                 Value="{x:Bind item.Tint, Mode=TwoWay}"
